@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="Portfolio.css">
+</head>
+<body>
+  <header>
+    <h2>My<span>Portfolio</span></h2>
+    <div class="menu-icon">☰</div>
+    <nav id="navMenu">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+
+  <div class="hero">
+    <div class="hero-left">
+      <h1>Hello, I'm <span style="color:#00bfa6;">Sai Lakshmi Durga</span></h1>
+      <p>Passionate Web Developer specializing in building responsive, modern, and user-friendly websites & applications.</p>
+      <a href="https://drive.google.com/file/d/1hptxJ8Lw8OphYUKr4Lj2-a9o7wNvSq1Y/view?usp=sharing"><button class="btn">Download Resume</button></a>
+    </div>
+    <div class="hero-right">
+      <img src="../images/23p31a0529 (1).jpg" alt="Profile Picture">
+    </div>
+  </div>
+
+
+  <section id="about">
+    <h2>About <span>Me</span></h2>
+    <p>I’m a passionate web developer with a strong focus on building clean, responsive, and user-friendly websites.  
+    I enjoy turning ideas into functional applications using HTML, CSS, JavaScript, and React.  
+    My goal is to blend creative design with efficient coding to deliver meaningful digital experiences.  
+    Beyond coding, I love collaborating with teams, sharing knowledge, and helping others grow in their learning journey.</p>
+  </section>
+
+ 
+  <section id="skills">
+    <h2>My <span>Skills</span></h2>
+    <div class="skills">
+      <div class="skill"><h3>HTML</h3><div class="bar"><span style="width:100%"></span></div></div>
+      <div class="skill"><h3>CSS</h3><div class="bar"><span style="width:100%"></span></div></div>
+      <div class="skill"><h3>JavaScript</h3><div class="bar"><span style="width:75%"></span></div></div>
+      <div class="skill"><h3>React</h3><div class="bar"><span style="width:40%"></span></div></div>
+    </div>
+  </section>
+
+
+  <section id="services">
+    <h2>My <span>Services</span></h2>
+    <div class="services">
+      <div class="service"><h3>Web Development</h3><p>Building responsive and modern websites.</p></div>
+      <div class="service"><h3>UI/UX Design</h3><p>Designing clean and user-friendly interfaces.</p></div>
+      <div class="service"><h3>Problem Solving</h3><p>Solving algorithmic and data structure challenges.</p></div>
+    </div>
+  </section>
+
+  
+   <section id="projects">
+    <h2>My <span>Projects</span></h2>
+    <div class="projects">
+      <div class="card" data-modal="project1">
+        <img src="../images/portfolia_card_image.png" alt="Portfolio Website">
+        <h3>Portfolio Website</h3>
+        <p>A personal portfolio built with modern web technologies.</p>
+      </div>
+      <div class="card" data-modal="project2">
+        <img src="../images/codedelight_card.png" alt="Code Delight">
+        <h3>Code Delight</h3>
+        <p>An interactive website for learning with games.</p>
+      </div>
+      <div class="card" data-modal="project3">
+        <img src="../images/indivista_card.png" alt="Indivista">
+        <h3>Indivista</h3>
+        <p>A website to know the places in India.</p>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="certifications">
+    <h2>My <span>Certifications</span></h2>
+    <div class="certifications">
+      <div class="card" data-modal="cert1"><h3>HTML & CSS</h3><p>Click for details</p></div>
+      <div class="card" data-modal="cert2"><h3>Javascript</h3><p>Click for details</p></div>
+      <div class="card" data-modal="cert3"><h3>RedHat</h3><p>Click for details</p></div>
+    </div>
+  </section>
+
+
+  <section id="contact">
+    <h2>Contact <span>Me</span></h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="4" placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+
+  <footer>
+    <p>© 2025 MyPortfolio | All Rights Reserved</p>
+  </footer>
+
+  
+   <div class="modal" id="project1">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('project1')">&times;</span>
+      <img src="../images/portfolia_card_image.png" alt="">
+      <h3>Portfolio Website</h3>
+      <p>A responsive portfolio website showcasing projects and skills.</p>
+      <a href="#">View Project</a>
+    </div>
+  </div>
+
+  <div class="modal" id="project2">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('project2')">&times;</span>
+      <img src="../images/codedelight_card.png" alt="">
+      <h3>Code Delight</h3>
+      <p>Interactive learning website with drag-and-drop coding games.</p>
+      <a href="https://github.com/lohithaalekhyakollu/CodeDelight">View Project</a>
+    </div>
+  </div>
+
+  <div class="modal" id="project3">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('project3')">&times;</span>
+      <img src="../images/indivista_card.png" alt="">
+      <h3>Indivista</h3>
+      <p>A travel website to explore Indian destinations.</p>
+      <a href="https://github.com/lohithaalekhyakollu/Indivista">View Project</a>
+    </div>
+  </div>
+
+  <div class="modal" id="cert1">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>HTML & CSS</h3>
+      <p>Certified in HTML, CSS fundamentals.</p>
+      <a href="https://drive.google.com/file/d/1mryfBgJj2LOVEWJjL0fbsELXKDggbfuE/view?usp=sharing">View Certificate</a>
+    </div>
+  </div>
+  <div class="modal" id="cert2">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>JAvascript</h3>
+      <p>Certified in Javascript Fundamentals</p>
+      <a href="https://drive.google.com/file/d/1UABkXps7oMKlh010PwXVt5PFVeLZJcdJ/view?usp=sharing">View Certificate</a>
+    </div>
+  </div>
+  <div class="modal" id="cert3">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>RedHat</h3>
+      <p>Certified in System Administrator</p>
+      <a href="https://drive.google.com/file/d/1-jcLcBjz36jx_4Sy4VB7Sl5MOYkQbN_y/view?usp=sharing">View Certificate</a>
+    </div>
+  </div>
+
+  
+  <script>
+    const menuIcon = document.querySelector(".menu-icon");
+    const navMenu = document.getElementById("navMenu");
+
+    menuIcon.addEventListener("click", (e) => {
+      e.stopPropagation();
+      navMenu.classList.toggle("show");
+    });
+
+    document.addEventListener("click", (e) => {
+      if (navMenu.classList.contains("show") && !navMenu.contains(e.target) && e.target !== menuIcon) {
+        navMenu.classList.remove("show");
+      }
+    });
+
+    document.querySelectorAll("#navMenu a").forEach(link => {
+      link.addEventListener("click", () => navMenu.classList.remove("show"));
+    });
+
+   
+    document.querySelectorAll(".card").forEach(card => {
+      card.addEventListener("click", () => {
+        const modalId = card.getAttribute("data-modal");
+        document.getElementById(modalId).style.display = "flex";
+      });
+    });
+
+    document.querySelectorAll(".close").forEach(btn => {
+      btn.addEventListener("click", () => {
+        btn.closest(".modal").style.display = "none";
+      });
+    });
+
+    window.addEventListener("click", e => {
+      document.querySelectorAll(".modal").forEach(modal => {
+        if (e.target === modal) modal.style.display = "none";
+      });
+    });
+  </script>
+</body>
+</html>
